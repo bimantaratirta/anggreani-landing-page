@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
+
 import React, { useEffect, useId, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { FaEye } from "react-icons/fa";
-import { TbTargetArrow } from "react-icons/tb";
+import { AnimatePresence, motion } from "framer-motion";
+import { PiTarget } from "react-icons/pi";
+import { FaRegEye } from "react-icons/fa6";
 
 export default function HomeVisionMision() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -102,7 +102,7 @@ export default function HomeVisionMision() {
                 <div className="flex justify-center items-center flex-col">
                   <motion.h3
                     layoutId={`title-${card.title}-${id}`}
-                    className="font-medium text-white text-center md:text-left text-base"
+                    className="font-bold text-white text-center md:text-left text-base"
                   >
                     {card.title}
                   </motion.h3>
@@ -152,7 +152,7 @@ export const CloseIcon = () => {
 const cards = [
   {
     title: "Vision",
-    src: <FaEye color="white" className="text-8xl md:text-9xl" />,
+    src: <FaRegEye color="white" className="text-8xl md:text-9xl" />,
     content: () => {
       return (
         <p className="text-sm">
@@ -183,7 +183,7 @@ const cards = [
   },
   {
     title: "Mission",
-    src: <TbTargetArrow color="white" className="text-8xl md:text-9xl" />,
+    src: <PiTarget color="white" className="text-8xl md:text-9xl" />,
     content: () => {
       return (
         <p className="text-sm">
