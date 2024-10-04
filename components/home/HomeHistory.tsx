@@ -7,7 +7,7 @@ import Carousel from "../../public/carousel1.jpg";
 
 const content = [
   {
-    title: 'The History of "Anggreani Batik" Batik Factory lorem2ansdknas',
+    title: 'The History of "Anggreani Batik" Batik Factory',
     description:
       "The Anggreani Batik factory was founded in 1975 by H. Sumarno, a local entrepreneur with a deep passion for traditional batik art. Starting as a small business in his backyard, H. Sumarno began his batik production with just two artisans. With perseverance, love for art, and the rich cultural heritage of Java, the factory grew to become one of the leading batik producers in Surakarta, Central Java.",
     content: (
@@ -90,7 +90,6 @@ const content = [
 export default function HomeHistory() {
   return (
     <div className="w-full no-scrollbar px-8 my-10">
-      <div className="flex text-4xl font-bold justify-center mb-8">History</div>
       <StickyScroll content={content} />
     </div>
   );

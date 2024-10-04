@@ -33,7 +33,7 @@ export default function HomeVisionMision() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="w-full flex flex-col items-center bg-blue-950 py-24 px-8 gap-16">
+    <div className="w-full flex flex-col items-center bg-blue-950 p-8 gap-2">
       <div className="text-4xl font-bold text-center text-white">
         Our Vision and Mission
       </div>
@@ -152,7 +152,7 @@ export const CloseIcon = () => {
 const cards = [
   {
     title: "Vision",
-    src: <FaRegEye color="white" className="text-8xl md:text-9xl" />,
+    src: <FaRegEye color="white" className="text-8xl" />,
     content: () => {
       return (
         <p className="text-sm">
@@ -183,7 +183,7 @@ const cards = [
   },
   {
     title: "Mission",
-    src: <PiTarget color="white" className="text-8xl md:text-9xl" />,
+    src: <PiTarget color="white" className="text-8xl" />,
     content: () => {
       return (
         <p className="text-sm">
