@@ -89,7 +89,7 @@ const content = [
 ];
 export default function HomeHistory() {
   return (
-    <div className="w-full no-scrollbar px-4 my-10">
+    <div className="w-full no-scrollbar px-8 my-10">
       <div className="flex text-4xl font-bold justify-center mb-8">History</div>
       <StickyScroll content={content} />
     </div>
