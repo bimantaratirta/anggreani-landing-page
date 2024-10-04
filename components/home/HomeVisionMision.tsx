@@ -34,7 +34,7 @@ export default function HomeVisionMision() {
 
   return (
     <div className="w-full flex flex-col items-center bg-blue-950 p-8 gap-2">
-      <div className="text-4xl font-bold text-center text-white">
+      <div className="text-4xl font-md text-center text-white">
         Our Vision and Mission
       </div>
       <div className="">
@@ -102,7 +102,7 @@ export default function HomeVisionMision() {
                 <div className="flex justify-center items-center flex-col">
                   <motion.h3
                     layoutId={`title-${card.title}-${id}`}
-                    className="font-bold text-white text-center md:text-left text-base"
+                    className="font-md text-white text-center md:text-left text-base"
                   >
                     {card.title}
                   </motion.h3>
@@ -152,7 +152,7 @@ export const CloseIcon = () => {
 const cards = [
   {
     title: "Vision",
-    src: <FaRegEye color="white" className="text-8xl" />,
+    src: <FaRegEye color="white" className="text-8xl opacity-85" />,
     content: () => {
       return (
         <p className="text-sm">
@@ -183,7 +183,7 @@ const cards = [
   },
   {
     title: "Mission",
-    src: <PiTarget color="white" className="text-8xl" />,
+    src: <PiTarget color="white" className="text-8xl opacity-85" />,
     content: () => {
       return (
         <p className="text-sm">
