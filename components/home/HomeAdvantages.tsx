@@ -13,11 +13,13 @@ const contents = [
 
 export default function HomeAdvantages() {
   return (
-    <div className="flex flex-col w-full items-center p-8 gap-16 m-auto my-16">
+    <div className="flex flex-col w-full items-center p-16 gap-16 m-auto my-16">
       {[1, 2, 3].map((card, index) => (
         <div
-          className={`flex gap-16 ${
-            index % 2 == 0 ? "flex-row" : "flex-row-reverse"
+          className={`flex items-center gap-4 md:gap-8 ${
+            index % 2 == 0
+              ? "flex-col md:flex-row"
+              : "flex-col md:flex-row-reverse"
           }`}
         >
           <Image
@@ -26,12 +28,16 @@ export default function HomeAdvantages() {
             className="flex-1 max-w-[300px] rounded-md"
           />
           <div
-            className={`flex flex-col gap-8 max-w-[600px] ${
-              index % 2 == 0 ? "items-start" : "items-end"
+            className={`flex flex-col gap-2 md:gap-4 max-w-md md:max-w-[600px] items-center ${
+              index % 2 == 0 ? "md:items-start" : "md:items-end"
             }`}
           >
             <div className="text-2xl font-bold">This is Title</div>
-            <div className={`${index % 2 == 0 ? "text-left" : "text-right"}`}>
+            <div
+              className={`text-center ${
+                index % 2 == 0 ? "md:text-left" : "md:text-right"
+              }`}
+            >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
               aliquam corporis officia recusandae repudiandae cum facilis et
               deserunt aspernatur accusantium! Lorem ipsum dolor, sit amet
