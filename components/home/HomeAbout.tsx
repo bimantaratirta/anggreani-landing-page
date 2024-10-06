@@ -14,8 +14,8 @@ export default function HomeAbout() {
           Contact our team
         </div>
         <div className="text-sm text-center">
-          Got any questions about the product or scaling on our platform? We're
-          here to help.
+          Got any questions about the product or scaling on our
+          platform?We&apos;re here to help.
         </div>
         <div className="text-sm text-center">
           Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
