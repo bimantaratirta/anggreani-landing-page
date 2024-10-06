@@ -1,0 +1,69 @@
+import React, { useEffect, useState } from "react";
+
+import Image from "next/image";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
+import Carousel1 from "../../public/carousel1.jpg";
+import Carousel2 from "../../public/carousel2.jpeg";
+import Carousel3 from "../../public/carousel3.jpg";
+
+export default function HomeSlider() {
+  const slides = [
+    { url: Carousel1, alt: "Batik 1" },
+    { url: Carousel2, alt: "Batik 2" },
+    { url: Carousel3, alt: "Batik 3" },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    console.log(slides[currentIndex].url);
+  };
+
+  useEffect(() => {
+    const autoPlay = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return () => clearInterval(autoPlay);
+  }, [currentIndex]);
+
+  return (
+    <div className="w-full mx-auto relative overflow-hidden">
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
+          <Image
+            key={index}
+            src={slide.url}
+            alt={slide.alt}
+            className="w-full aspect-[20/9] object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white opacity-20 rounded-full p-1 md:p-3 flex-1 shadow-md"
+      >
+        <IoIosArrowBack className="text-[16px] md:text-[32px]" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white opacity-20 rounded-full p-1 md:p-3 flex-1 shadow-md"
+      >
+        <IoIosArrowForward className="text-[16px] md:text-[32px]" />
+      </button>
+    </div>
+  );
+}
