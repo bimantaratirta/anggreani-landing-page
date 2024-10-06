@@ -33,7 +33,7 @@ export default function HomeVisionMision() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="w-full flex flex-col items-center bg-blue-950 p-8 gap-2">
+    <div className="w-full flex flex-col items-center bg-blue-900 p-8 gap-2">
       <div className="text-4xl font-md text-center text-white">
         Our Vision and Mission
       </div>
@@ -91,7 +91,7 @@ export default function HomeVisionMision() {
               layoutId={`card-${card.title}-${id}`}
               key={card.title}
               onClick={() => setActive(card)}
-              className="p-8 flex flex-col hover:bg-slate-800 rounded-xl cursor-pointer"
+              className="p-8 flex flex-col hover:bg-blue-950 rounded-xl cursor-pointer"
             >
               <div className="flex gap-4 flex-col items-center w-full">
                 <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -152,7 +152,7 @@ export const CloseIcon = () => {
 const cards = [
   {
     title: "Vision",
-    src: <FaRegEye color="white" className="text-8xl opacity-85" />,
+    src: <FaRegEye color="white" className="text-6xl opacity-85" />,
     content: () => {
       return (
         <p className="text-sm">
@@ -183,7 +183,7 @@ const cards = [
   },
   {
     title: "Mission",
-    src: <PiTarget color="white" className="text-8xl opacity-85" />,
+    src: <PiTarget color="white" className="text-6xl opacity-85" />,
     content: () => {
       return (
         <p className="text-sm">

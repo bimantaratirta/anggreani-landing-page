@@ -5,19 +5,17 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export default function HomeTestimonials() {
   return (
-    <div className="flex flex-col antialiased bg-blue-950 items-center justify-center relative overflow-hidden gap-4 py-8">
-      <div className="flex flex-row w-full mb-4 gap-4 justify-center gap-8 md:gap-16">
+    <div className="flex flex-col antialiased bg-blue-900 items-center justify-center relative overflow-hidden gap-4 py-16">
+      <div className="flex flex-col md:flex-row w-full mb-4 gap-4 justify-center gap-8 md:gap-16">
         {projects.map((project, index) => (
           <div
             className="flex flex-col items-center justify-center"
             key={index}
           >
-            <div className="md:text-4xl font-bold text-white">
+            <div className="font-black text-white text-2xl md:text-4xl">
               {project.count}+
             </div>
-            <div className="md:text-2xl font-md text-white">
-              {project.description}
-            </div>
+            <div className="md:text-2xl text-white">{project.description}</div>
           </div>
         ))}
       </div>

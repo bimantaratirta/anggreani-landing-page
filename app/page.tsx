@@ -6,6 +6,7 @@ import HomeHistory from "@/components/home/HomeHistory";
 import HomeAdvantages from "@/components/home/HomeAdvantages";
 import HomeTestimonials from "@/components/home/HomeTestimonials";
 import HomeVisionMision from "@/components/home/HomeVisionMision";
+import ScrollUpButton from "@/components/home/HomeScrollUpButton";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <HomeTestimonials />
       <br />
       <HomeAbout />
+      <ScrollUpButton />
     </div>
   );
 }

@@ -89,7 +89,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-lg text-black-200 max-w-lg mt-10 text-justify" // Ubah ke warna teks yang lebih gelap
+                className="text-md text-black-200 max-w-lg mt-10 text-justify" // Ubah ke warna teks yang lebih gelap
               >
                 {item.description}
               </motion.p>
