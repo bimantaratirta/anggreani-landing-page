@@ -3,18 +3,18 @@ import React from "react";
 import Image from "next/image";
 import Carousel from "../../public/carousel1.jpg";
 
-const contents = [
-  {
-    image: "",
-    title: "",
-    description: "",
-  },
-];
+// const contents = [
+//   {
+//     image: "",
+//     title: "",
+//     description: "",
+//   },
+// ];
 
 export default function HomeAdvantages() {
   return (
     <div className="flex flex-col w-full items-center p-16 gap-16 m-auto my-16">
-      {[1, 2, 3].map((card, index) => (
+      {[1, 2, 3].map((_, index) => (
         <div
           key={index}
           className={`flex items-center gap-4 md:gap-8 ${

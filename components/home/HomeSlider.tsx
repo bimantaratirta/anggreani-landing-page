@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -22,12 +22,11 @@ export default function HomeSlider() {
     setCurrentIndex(newIndex);
   };
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-    console.log(slides[currentIndex].url);
-  };
+  }, [currentIndex, slides.length]);
 
   useEffect(() => {
     const autoPlay = setInterval(() => {
@@ -35,7 +34,7 @@ export default function HomeSlider() {
     }, 3000);
 
     return () => clearInterval(autoPlay);
-  }, [currentIndex]);
+  }, [currentIndex, nextSlide]);
 
   return (
     <div className="w-full mx-auto relative overflow-hidden">
