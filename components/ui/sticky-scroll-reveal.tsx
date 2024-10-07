@@ -41,7 +41,7 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "#f1f5f9", // Ubah warna background ke warna lebih terang
+    "var(--slate-100)",
     "var(--white)",
     "var(--neutral-100)",
   ];
@@ -81,7 +81,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-black-900" // Ubah ke warna teks yang lebih gelap
+                className="text-2xl font-bold text-black-900"
               >
                 {item.title}
               </motion.h2>
@@ -92,7 +92,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-md text-black-200 max-w-lg mt-10 text-justify" // Ubah ke warna teks yang lebih gelap
+                className="text-md text-black-200 max-w-lg mt-10 text-justify"
               >
                 {item.description}
               </motion.p>
