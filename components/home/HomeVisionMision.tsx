@@ -156,27 +156,12 @@ const cards = [
     content: () => {
       return (
         <p className="text-sm">
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-          <br /> <br />
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Making professional batik oriented to product quality and uniqueness
+          as well as trying to preserve, growing the tradition of Indonesian
+          batik as an effort to improve the welfare of the Indonesian people in
+          particular and grow the Indonesian batik handicraft industry in
+          general and become a pioneer of batik companies that are ready to
+          compete widely and internationally.
         </p>
       );
     },
@@ -186,29 +171,40 @@ const cards = [
     src: <PiTarget color="white" className="text-6xl opacity-85" />,
     content: () => {
       return (
-        <p className="text-sm">
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-          <br /> <br />
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-        </p>
+        <ul className="text-sm" style={{ listStyleType: "disc" }}>
+          <li>
+            Batik artisans make one of the proud people of Indonesia who should
+            be maintained, developed and preserving batik as a national
+            heritage.
+            <br />
+            <br />
+          </li>
+          <li>
+            Indonesian batik can be better known in the world of national and
+            international batik.
+            <br />
+            <br />
+          </li>
+          <li>
+            Enrich the design of motifs to increase the treasury of existing
+            traditional motifs and the community.
+            <br />
+            <br />
+          </li>
+          <li>
+            Improving the quality of human resources in the batik handicraft
+            industry by educating skilled and productive workers drawn from
+            areas outside the center of batik artisans.
+            <br />
+            <br />
+          </li>
+          <li>
+            Expanding networks with centers of batik craft industry through the
+            exchange of information on design and production processes.
+            <br />
+            <br />
+          </li>
+        </ul>
       );
     },
   },

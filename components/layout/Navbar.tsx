@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
 import Logo from "../../public/logo.jpeg";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const currentPath = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -31,7 +33,9 @@ const Navbar = () => {
           <li>
             <Link
               href="/"
-              className="hover:text-blue-900 transition duration-300"
+              className={`${
+                currentPath === "/" ? "text-blue-900" : ""
+              } hover:text-blue-900 font-medium transition duration-300`}
             >
               Home
             </Link>
@@ -39,7 +43,9 @@ const Navbar = () => {
           <li>
             <Link
               href="/about-us"
-              className="hover:text-blue-900 transition duration-300"
+              className={`${
+                currentPath.includes("/about-us") ? "text-blue-900" : ""
+              } hover:text-blue-900 font-medium transition duration-300`}
             >
               About Us
             </Link>
@@ -47,7 +53,9 @@ const Navbar = () => {
           <li className="relative">
             <button
               onClick={toggleDropdown}
-              className="hover:text-blue-900 flex items-center transition duration-300"
+              className={`${
+                currentPath.includes("/what-we-do") ? "text-blue-900" : ""
+              } hover:text-blue-900 font-medium flex items-center transition duration-300`}
             >
               What We Do
               <svg
@@ -88,7 +96,9 @@ const Navbar = () => {
           <li>
             <Link
               href="/gallery"
-              className="hover:text-blue-900 transition duration-300"
+              className={`${
+                currentPath.includes("/gallery") ? "text-blue-900" : ""
+              } hover:text-blue-900 font-medium transition duration-300`}
             >
               Gallery
             </Link>
@@ -96,7 +106,9 @@ const Navbar = () => {
           <li>
             <Link
               href="/contact-us"
-              className="hover:text-blue-900 transition duration-300"
+              className={`${
+                currentPath.includes("/contact-us") ? "text-blue-900" : ""
+              } hover:text-blue-900 font-medium transition duration-300`}
             >
               Contact Us
             </Link>
@@ -107,7 +119,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="hover:text-blue-900 transition duration-300"
+                className={`${
+                  currentPath === "/" ? "text-blue-900" : ""
+                } hover:text-blue-900 font-medium transition duration-300`}
               >
                 Home
               </Link>
@@ -115,7 +129,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/about-us"
-                className="hover:text-blue-900 transition duration-300"
+                className={`${
+                  currentPath.includes("/about-us") ? "text-blue-900" : ""
+                } hover:text-blue-900 font-medium transition duration-300`}
               >
                 About Us
               </Link>
@@ -123,7 +139,9 @@ const Navbar = () => {
             <li>
               <button
                 onClick={toggleDropdown}
-                className="hover:text-blue-900 flex items-center transition duration-300"
+                className={`${
+                  currentPath.includes("/what-we-do") ? "text-blue-900" : ""
+                } hover:text-blue-900 font-medium flex items-center transition duration-300`}
               >
                 What We Do
                 <svg
@@ -167,7 +185,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/gallery"
-                className="hover:text-blue-900 transition duration-300"
+                className={`${
+                  currentPath.includes("/gallery") ? "text-blue-900" : ""
+                } hover:text-blue-900 font-medium transition duration-300`}
               >
                 Gallery
               </Link>
@@ -175,7 +195,9 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact-us"
-                className="hover:text-blue-900 transition duration-300"
+                className={`${
+                  currentPath.includes("/contact-us") ? "text-blue-900" : ""
+                } hover:text-blue-900 font-medium transition duration-300`}
               >
                 Contact Us
               </Link>
