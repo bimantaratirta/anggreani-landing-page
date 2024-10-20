@@ -34,8 +34,8 @@ const Navbar = () => {
             <Link
               href="/"
               className={`${
-                currentPath === "/" ? "text-blue-900" : ""
-              } hover:text-blue-900 font-medium transition duration-300`}
+                currentPath === "/" ? "text-blue-700" : ""
+              } hover:text-blue-700 font-medium transition duration-300`}
             >
               Home
             </Link>
@@ -44,8 +44,8 @@ const Navbar = () => {
             <Link
               href="/about-us"
               className={`${
-                currentPath.includes("/about-us") ? "text-blue-900" : ""
-              } hover:text-blue-900 font-medium transition duration-300`}
+                currentPath.includes("/about-us") ? "text-blue-700" : ""
+              } hover:text-blue-700 font-medium transition duration-300`}
             >
               About Us
             </Link>
@@ -54,8 +54,8 @@ const Navbar = () => {
             <button
               onClick={toggleDropdown}
               className={`${
-                currentPath.includes("/what-we-do") ? "text-blue-900" : ""
-              } hover:text-blue-900 font-medium flex items-center transition duration-300`}
+                currentPath.includes("/what-we-do") ? "text-blue-700" : ""
+              } hover:text-blue-700 font-medium flex items-center transition duration-300`}
             >
               What We Do
               <svg
@@ -97,8 +97,8 @@ const Navbar = () => {
             <Link
               href="/gallery"
               className={`${
-                currentPath.includes("/gallery") ? "text-blue-900" : ""
-              } hover:text-blue-900 font-medium transition duration-300`}
+                currentPath.includes("/gallery") ? "text-blue-700" : ""
+              } hover:text-blue-700 font-medium transition duration-300`}
             >
               Gallery
             </Link>
@@ -107,8 +107,8 @@ const Navbar = () => {
             <Link
               href="/contact-us"
               className={`${
-                currentPath.includes("/contact-us") ? "text-blue-900" : ""
-              } hover:text-blue-900 font-medium transition duration-300`}
+                currentPath.includes("/contact-us") ? "text-blue-700" : ""
+              } hover:text-blue-700 font-medium transition duration-300`}
             >
               Contact Us
             </Link>
@@ -120,8 +120,8 @@ const Navbar = () => {
               <Link
                 href="/"
                 className={`${
-                  currentPath === "/" ? "text-blue-900" : ""
-                } hover:text-blue-900 font-medium transition duration-300`}
+                  currentPath === "/" ? "text-blue-700" : ""
+                } hover:text-blue-700 font-medium transition duration-300`}
               >
                 Home
               </Link>
@@ -130,8 +130,8 @@ const Navbar = () => {
               <Link
                 href="/about-us"
                 className={`${
-                  currentPath.includes("/about-us") ? "text-blue-900" : ""
-                } hover:text-blue-900 font-medium transition duration-300`}
+                  currentPath.includes("/about-us") ? "text-blue-700" : ""
+                } hover:text-blue-700 font-medium transition duration-300`}
               >
                 About Us
               </Link>
@@ -140,8 +140,8 @@ const Navbar = () => {
               <button
                 onClick={toggleDropdown}
                 className={`${
-                  currentPath.includes("/what-we-do") ? "text-blue-900" : ""
-                } hover:text-blue-900 font-medium flex items-center transition duration-300`}
+                  currentPath.includes("/what-we-do") ? "text-blue-700" : ""
+                } hover:text-blue-700 font-medium flex items-center transition duration-300`}
               >
                 What We Do
                 <svg
@@ -186,8 +186,8 @@ const Navbar = () => {
               <Link
                 href="/gallery"
                 className={`${
-                  currentPath.includes("/gallery") ? "text-blue-900" : ""
-                } hover:text-blue-900 font-medium transition duration-300`}
+                  currentPath.includes("/gallery") ? "text-blue-700" : ""
+                } hover:text-blue-700 font-medium transition duration-300`}
               >
                 Gallery
               </Link>
@@ -196,8 +196,8 @@ const Navbar = () => {
               <Link
                 href="/contact-us"
                 className={`${
-                  currentPath.includes("/contact-us") ? "text-blue-900" : ""
-                } hover:text-blue-900 font-medium transition duration-300`}
+                  currentPath.includes("/contact-us") ? "text-blue-700" : ""
+                } hover:text-blue-700 font-medium transition duration-300`}
               >
                 Contact Us
               </Link>
