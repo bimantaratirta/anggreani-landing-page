@@ -23,7 +23,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white px-4 py-6 w-full">
       <div className="container mx-auto flex flex-wrap justify-between items-center transition duration-300">
-        <Image src={Logo} alt={"logo"} className="w-[125px] sm:w-[200px]" />
+        <Image
+          src={Logo}
+          alt={"logo"}
+          className="w-[125px] sm:w-[200px]"
+          priority
+        />
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-black">
             {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
