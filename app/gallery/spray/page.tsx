@@ -71,7 +71,7 @@ const Spray: React.FC = () => {
       {selectedImage !== null && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50  max-h-screen">
           <div className="relative w-[90%] h-[75%]">
-            <div className="absolute relative max-h-[90%] bg-red-500 flex justify-center">
+            <div className="absolute relative max-h-[90%] flex justify-center">
               <button
                 onClick={closeModal}
                 className="absolute top-2 right-2 text-white text-2xl"
