@@ -83,7 +83,11 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul className="absolute z-10 left-0 mt-2 w-40 bg-white text-gray-800 rounded shadow-md transition-opacity duration-300 opacity-100">
                 <li className="hover:bg-gray-200 transition duration-300">
-                  <Link href="/what-we-do/process" className="block px-4 py-2">
+                  <Link
+                    href="/what-we-do/process"
+                    className="block px-4 py-2"
+                    onClick={toggleDropdown}
+                  >
                     Process
                   </Link>
                 </li>
@@ -91,6 +95,7 @@ const Navbar = () => {
                   <Link
                     href="/what-we-do/warehouse"
                     className="block px-4 py-2"
+                    onClick={toggleDropdown}
                   >
                     Warehouse
                   </Link>
@@ -172,6 +177,7 @@ const Navbar = () => {
                     <Link
                       href="/what-we-do/process"
                       className="block px-4 py-2"
+                      onClick={toggleDropdown}
                     >
                       Process
                     </Link>
@@ -180,6 +186,7 @@ const Navbar = () => {
                     <Link
                       href="/what-we-do/warehouse"
                       className="block px-4 py-2"
+                      onClick={toggleDropdown}
                     >
                       Warehouse
                     </Link>
