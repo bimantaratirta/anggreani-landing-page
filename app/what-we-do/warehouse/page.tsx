@@ -1,5 +1,4 @@
 import Dummy from "@/public/carousel1.jpg";
-import Dummy2 from "@/public/carousel1.jpg";
 import Image from "next/image";
 
 export default function Warehouse() {
@@ -33,7 +32,7 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>Free custom packing with the Bolt or Roll.</li>
@@ -75,12 +74,14 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>40 strip Cotton Fabric Fat Quarter or Custom</li>
                 <li>40 Color of Fabric Fat Quarter or Custom </li>
-                <li>Each Fat Quarter Measures Approximately 9'x 22‘</li>
+                <li>
+                  Each Fat Quarter Measures Approximately 9&apos;x 22&apos;
+                </li>
                 <li>Pricing per Bundle</li>
               </ul>
             </div>
@@ -115,12 +116,14 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>40 strip Cotton Fabric Fat Quarter or Custom</li>
                 <li>40 Color of Fabric Fat Quarter or Custom </li>
-                <li>Each Fat Quarter Measures Approximately 21.5' x 44‘</li>
+                <li>
+                  Each Fat Quarter Measures Approximately 21.5&apos; x 44&apos;
+                </li>
                 <li>Pricing per Bundle</li>
               </ul>
             </div>
@@ -155,12 +158,14 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>40 strip Cotton Fabric Fat Quarter or Custom</li>
                 <li>40 Color of Fabric Fat Quarter or Custom </li>
-                <li>Each Fat Quarter Measures Approximately 10' x 10‘</li>
+                <li>
+                  Each Fat Quarter Measures Approximately 10&apos; x 10&apos;
+                </li>
                 <li>Pricing per Bundle</li>
               </ul>
             </div>
@@ -193,12 +198,14 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>40 strip Cotton Fabric Fat Quarter or Custom</li>
                 <li>40 Color of Fabric Fat Quarter or Custom </li>
-                <li>Each Fat Quarter Measures Approximately 5' x 5‘</li>
+                <li>
+                  Each Fat Quarter Measures Approximately 5&apos; x 5&apos;
+                </li>
                 <li>Pricing per Bundle</li>
               </ul>
             </div>
@@ -233,12 +240,14 @@ export default function Warehouse() {
             <div className="flex flex-col items-center flex-1">
               <div className="text-lg font-bold mb-4">Detail</div>
               <ul className="list-disc list-inside">
-                <li>Use 100% cotton in construction 40’s or 50’s</li>
+                <li>Use 100% cotton in construction 40&apos;s or 50&apos;s</li>
                 <li>Free Use our design or custom design</li>
                 <li>Free custom coloration</li>
                 <li>40 strip Cotton Fabric Fat Quarter or Custom</li>
                 <li>40 Color of Fabric Fat Quarter or Custom </li>
-                <li>Each Fat Quarter Measures Approximately 9' x 22‘</li>
+                <li>
+                  Each Fat Quarter Measures Approximately 9&apos; x 22&apos;
+                </li>
                 <li>Pricing per Bundle</li>
               </ul>
             </div>

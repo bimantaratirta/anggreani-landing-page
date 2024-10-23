@@ -6,6 +6,7 @@ import Dummy2 from "@/public/carousel2.jpeg";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useAuth } from "@/context/AuthContext";
+import crypto from "crypto";
 
 const images = [
   { id: 1, title: "Foto 1", src: Dummy },
@@ -29,7 +30,6 @@ const images = [
 
 const Stamp: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const crypto = require("crypto");
   const auth = useAuth();
   const [form, setForm] = useState<{ pw: string; error?: string }>({ pw: "" });
   const access =
