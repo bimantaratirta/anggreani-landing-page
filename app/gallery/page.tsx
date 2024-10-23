@@ -4,6 +4,7 @@ import { FocusCards } from "@/components/ui/focus-cards";
 import Preview from "../../public/carousel1.jpg";
 import { useAuth } from "@/context/AuthContext";
 import { useState } from "react";
+import crypto from "crypto";
 
 const cards = [
   {
@@ -17,7 +18,6 @@ const cards = [
 ];
 
 export default function Gallery() {
-  const crypto = require("crypto");
   const auth = useAuth();
   const [form, setForm] = useState<{ pw: string; error?: string }>({ pw: "" });
   const access =
