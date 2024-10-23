@@ -9,7 +9,7 @@ const content = [
   {
     title: 'The History of "Anggreani Batik" Batik Factory',
     description:
-      "The Anggreani Batik factory was founded in 1975 by H. Sumarno, a local entrepreneur with a deep passion for traditional batik art. Starting as a small business in his backyard, H. Sumarno began his batik production with just two artisans. With perseverance, love for art, and the rich cultural heritage of Java, the factory grew to become one of the leading batik producers in Surakarta, Central Java.",
+      "CV. ANGGREANI is an exporter of Indonesian batik fabric handmade, established in 2015 by Ms. Umi Isticharoh, with the experience of working in a batik company, she tries to innovate making her own batik in small quantities. At that time he tried to give some samples of batik made to the relations to be reviewed and assisted to promote in the domestic and international markets. Because at that time the fashion trends of batik in the international market looked very interested, especially Indonesian Batik with a variety of uniqueness. Many original Batik motifs are produced here, although there are so many design requests from customers that are done here. By always innovating on the designs, materials and types of batik that change trends every time, then this company can grow and become more widespread in the international market .",
     content: (
       <div className="h-full w-full flex items-center justify-center text-black">
         <Image
@@ -23,9 +23,9 @@ const content = [
     ),
   },
   {
-    title: "Business Journey",
+    title: "Production Capacity",
     description:
-      "In its early years, Anggreani Batik focused on the production of traditional hand-drawn batik, using natural dyes and iconic Javanese motifs such as Parang, Kawung, and Truntum. The uniqueness and high quality of the products quickly made the factory well-known in both local and national markets.",
+      "We have our own factory for production which can produce more than 100,000 yards every month consisting of various colors and very beautiful patterns that are handmade.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-black">
         <Image
@@ -39,41 +39,9 @@ const content = [
     ),
   },
   {
-    title: "",
+    title: "Design Expertise",
     description:
-      "By 1985, as demand for batik surged, the factory underwent a significant expansion. The production facilities were upgraded, and the number of artisans working under Anggreani Batik grew to more than 100 people. Over time, Anggreani Batik began to reach international markets, exporting its products to countries such as Japan, the United States, and various European nations.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-black">
-        <Image
-          src={Logo}
-          width={300}
-          height={300}
-          className="h-full w-full object-contain rounded"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Location",
-    description:
-      "The Anggreani Batik factory is located in the heart of Surakarta, also known as Solo, specifically at Jalan Slamet Riyadi No. 123, Surakarta, Central Java. This prime location is in the cultural and artistic hub of Solo, making it an ideal place to express the art of batik and preserve local traditions.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-black">
-        <Image
-          src={Carousel}
-          width={300}
-          height={300}
-          className="h-full w-full object-contain rounded"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Commitment to Cultural Heritage",
-    description:
-      "As one of the oldest batik producers in Surakarta, Anggreani Batik is deeply committed to preserving the art of traditional batik. While the batik industry has modernized, we continue to uphold the hand-drawn and stamped batik techniques passed down through generations. We also embrace modern innovations to create new motifs that keep up with contemporary trends, all while staying true to our cultural roots.",
+      "We also have designer and many artisans who are very reliable in batik technique so we can always fulfill whatever you need, from the design to colorations.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-black">
         <Image
