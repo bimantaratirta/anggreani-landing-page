@@ -1,15 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import Carousel from "../../public/carousel1.jpg";
-
-// const contents = [
-//   {
-//     image: "",
-//     title: "",
-//     description: "",
-//   },
-// ];
+import Slider from "@/public/image/Header Slide 1.jpg";
 
 export default function HomeAdvantages() {
   return (
@@ -24,7 +16,7 @@ export default function HomeAdvantages() {
           }`}
         >
           <Image
-            src={Carousel}
+            src={Slider}
             alt={"image"}
             className="flex-1 max-w-[300px] rounded-md"
           />

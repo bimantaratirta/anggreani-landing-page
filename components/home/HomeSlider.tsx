@@ -3,15 +3,17 @@ import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-import Carousel1 from "../../public/carousel1.jpg";
-import Carousel2 from "../../public/carousel2.jpeg";
-import Carousel3 from "../../public/carousel3.jpg";
+import Slider1 from "@/public/image/Header Slide 1.jpg";
+import Slider2 from "@/public/image/Header Slide 2.jpg";
+import Slider3 from "@/public/image/Header Slide 3.jpg";
+import Slider4 from "@/public/image/Header Slide 4.jpg";
 
 export default function HomeSlider() {
   const slides = [
-    { url: Carousel1, alt: "Batik 1" },
-    { url: Carousel2, alt: "Batik 2" },
-    { url: Carousel3, alt: "Batik 3" },
+    { url: Slider1, alt: "Batik 1" },
+    { url: Slider2, alt: "Batik 2" },
+    { url: Slider3, alt: "Batik 3" },
+    { url: Slider4, alt: "Batik 3" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
