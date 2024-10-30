@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Dummy from "@/public/carousel1.jpg";
-import Dummy2 from "@/public/carousel2.jpeg";
+import Dummy2 from "@/public/carousel1.jpg";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useAuth } from "@/context/AuthContext";

@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export default function HomeTestimonials() {
   return (
-    <div className="flex flex-col antialiased bg-blue-900 items-center justify-center relative overflow-hidden gap-4 py-16">
+    <div className="flex flex-col antialiased bg-blue-900 items-center justify-center relative overflow-hidden gap-4 py-16 w-screen">
       <div className="flex flex-col md:flex-row w-full mb-4 gap-4 justify-center gap-8 md:gap-16">
         {projects.map((project, index) => (
           <div
@@ -19,15 +19,14 @@ export default function HomeTestimonials() {
           </div>
         ))}
       </div>
-      <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
+      {/* <InfiniteMovingCards items={testimonials} direction="left" speed="slow" /> */}
     </div>
   );
 }
 
 const projects = [
-  { count: "10,000,000", description: "Yards" },
-  { count: "10,000", description: "Projects" },
-  { count: "10", description: "Countries" },
+  { count: "100,000", description: "Yards/Month" },
+  { count: "5", description: "Countries" },
 ];
 
 const testimonials = [

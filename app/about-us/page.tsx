@@ -1,6 +1,18 @@
 import Image from "next/image";
-import Background from "../../public/carousel1.jpg";
+import Background from "@/public/image/IMG_0321.jpg";
 import { Timeline } from "@/components/ui/timeline";
+import History1 from "@/public/image/The History 1.jpg";
+import History2 from "@/public/image/The History 2.jpg";
+import History3 from "@/public/image/The History 3.jpg";
+import History4 from "@/public/image/IMG_0304.jpg";
+import Production1 from "@/public/image/Production Capacity 1.jpg";
+import Production2 from "@/public/image/Production Capacity 2.jpg";
+import Production3 from "@/public/image/Production Capacity 3.jpg";
+import Production4 from "@/public/image/Production Capacity 4.jpg";
+import Design1 from "@/public/image/IMG_0244.jpg";
+import Design2 from "@/public/image/IMG_0295.jpg";
+import Design3 from "@/public/image/IMG_0315.jpg";
+import Design4 from "@/public/image/IMG_0306.jpg";
 
 export default function AboutUs() {
   return (
@@ -48,28 +60,28 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
-            src={Background}
+            src={History1}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={History2}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={History3}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={History4}
             alt="startup template"
             width={500}
             height={500}
@@ -90,28 +102,28 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
-            src={Background}
+            src={Production1}
             alt="hero template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Production2}
             alt="feature template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Production3}
             alt="bento template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Production4}
             alt="cards template"
             width={500}
             height={500}
@@ -132,28 +144,28 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
-            src={Background}
+            src={Design1}
             alt="hero template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Design2}
             alt="feature template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Design3}
             alt="bento template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={Background}
+            src={Design4}
             alt="cards template"
             width={500}
             height={500}

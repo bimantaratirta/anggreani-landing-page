@@ -5,7 +5,9 @@ export default function Warehouse() {
   return (
     <div className="container flex flex-col px-16">
       <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl font-bold">Types of products that we sell</div>
+        <div className="text-4xl font-bold">
+          Types of products that we sell ROMBAK DESIGNNYA
+        </div>
         <div className="flex flex-col md:flex-row w-full gap-8 md:gap-16 justify-center mt-8">
           <div className="">
             <div className="text-lg font-bold">Batik Material</div>

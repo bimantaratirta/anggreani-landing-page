@@ -97,7 +97,7 @@ const Navbar = () => {
                     className="block px-4 py-2"
                     onClick={toggleDropdown}
                   >
-                    Warehouse
+                    Our Product
                   </Link>
                 </li>
               </ul>
@@ -188,7 +188,7 @@ const Navbar = () => {
                       className="block px-4 py-2"
                       onClick={toggleDropdown}
                     >
-                      Warehouse
+                      Our Product
                     </Link>
                   </li>
                 </ul>
