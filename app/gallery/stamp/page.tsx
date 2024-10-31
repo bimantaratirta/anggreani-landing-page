@@ -63,43 +63,43 @@ const Stamp: React.FC = () => {
     setSelectedImage(null);
   };
 
-  // if (!auth.isLogin) {
-  //   return (
-  //     <div className="flex items-center justify-center min-h-screen relative">
-  //       <div className="max-w-sm w-full mx-auto absolute p-8 bg-gray-100 rounded-md">
-  //         <div className="mb-5">
-  //           <label
-  //             htmlFor="password"
-  //             className="block mb-2 text-sm font-medium text-gray-900"
-  //           >
-  //             You need to insert password to see our contents!
-  //           </label>
-  //           <input
-  //             type="password"
-  //             id="password"
-  //             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-  //             onChange={(e) => handleOnChange(e.target.value)}
-  //             required
-  //           />
-  //           <label htmlFor="" className="text-red-500 text-sm">
-  //             {form.error}
-  //           </label>
-  //         </div>
-  //         <button
-  //           type="submit"
-  //           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-  //           onClick={handleSubmit}
-  //         >
-  //           Submit
-  //         </button>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (!auth.isLogin) {
+    return (
+      <div className="flex items-center justify-center min-h-screen relative">
+        <div className="max-w-sm w-full mx-auto absolute p-8 bg-gray-100 rounded-md">
+          <div className="mb-5">
+            <label
+              htmlFor="password"
+              className="block mb-2 text-sm font-medium text-gray-900"
+            >
+              You need to insert password to see our contents!
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              onChange={(e) => handleOnChange(e.target.value)}
+              required
+            />
+            <label htmlFor="" className="text-red-500 text-sm">
+              {form.error}
+            </label>
+          </div>
+          <button
+            type="submit"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {images.map((item, index) => (
           <div
             key={index}
@@ -156,7 +156,10 @@ const Stamp: React.FC = () => {
             </div>
             <div className="absolute mt-4 flex flex-wrap justify-center space-x-2 space-y-2">
               {images.map((image, index) => (
-                <div className="relative overflow-hidden grou flex flex-col items-center">
+                <div
+                  key={index}
+                  className="relative overflow-hidden grou flex flex-col items-center"
+                >
                   <Image
                     src={image.src}
                     alt={image.title}
