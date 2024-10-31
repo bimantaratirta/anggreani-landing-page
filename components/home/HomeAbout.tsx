@@ -1,12 +1,20 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { BsTelephone } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 export default function HomeAbout() {
+  const [data, setData] = useState<{
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    msg: string;
+  }>({ firstName: "", lastName: "", email: "", phone: "", msg: "" });
+
   return (
     <div className="flex flex-col gap-16 w-full mt-4 p-8">
       <div className="flex flex-col items-center">
@@ -42,12 +50,22 @@ export default function HomeAbout() {
                 </li>
                 <li>
                   <Link
-                    href="https://twitter.com"
+                    href="https://instagram.com"
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >
-                    <FaXTwitter />
-                    <span>Message us on X</span>
+                    <FaInstagram />
+                    <span>Visit our Instagram</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="mailto:anggreanibatik@gmail.com"
+                    target="_blank"
+                    className="flex items-center space-x-2 hover:text-blue-800"
+                  >
+                    <FiMail />
+                    <span>anggreanibatik@gmail.com</span>
                   </Link>
                 </li>
                 <li>
@@ -56,8 +74,18 @@ export default function HomeAbout() {
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >
-                    <FaInstagram />
-                    <span>Visit our Instagram</span>
+                    <FiMail />
+                    <span>doc1.anggreanibatik@gmail.com</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://instagram.com"
+                    target="_blank"
+                    className="flex items-center space-x-2 hover:text-blue-800"
+                  >
+                    <FiMail />
+                    <span>marketing1.anggreanibatik@gmail.com</span>
                   </Link>
                 </li>
               </ul>
@@ -69,12 +97,12 @@ export default function HomeAbout() {
                 Call our team Mon-Fri from 8am to 5pm (GMT+7).
               </p>
               <Link
-                href="tel:+15550000000"
+                href="tel:+622717452396"
                 target="_blank"
                 className="flex items-center space-x-2 hover:text-blue-800"
               >
                 <BsTelephone />
-                <span>+62 (123) 456-789</span>
+                <span>(+62) 271 745 2396</span>
               </Link>
             </section>
 
@@ -95,100 +123,127 @@ export default function HomeAbout() {
         </div>
         <div className="flex">
           <div className="max-w-lg mx-auto">
-            <form className="grid grid-cols-1 gap-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    First name
-                  </label>
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    placeholder="First name"
-                    className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    placeholder="Last name"
-                    className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
-                  />
-                </div>
-              </div>
-
+            <div className="grid grid-cols-2 gap-4">
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="first-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email
+                  First name
                 </label>
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="you@company.com"
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="First name"
                   className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
+                  onChange={(e) =>
+                    setData((old) => ({ ...old, firstName: e.target.value }))
+                  }
                 />
               </div>
 
               <div>
                 <label
-                  htmlFor="phone-number"
+                  htmlFor="last-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Phone number
+                  Last name
                 </label>
-                <div className="flex mt-1">
-                  <input
-                    type="text"
-                    name="phone-number"
-                    id="phone-number"
-                    placeholder="+1 (555) 000-0000"
-                    className="px-4 py-2 block w-3/4 rounded-r-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="Leave us a message..."
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last name"
                   className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
-                ></textarea>
+                  onChange={(e) =>
+                    setData((old) => ({ ...old, lastName: e.target.value }))
+                  }
+                />
               </div>
+            </div>
 
-              <div>
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
-                >
-                  Send
-                </button>
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@company.com"
+                className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
+                onChange={(e) =>
+                  setData((old) => ({ ...old, email: e.target.value }))
+                }
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="phone-number"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Phone number
+              </label>
+              <div className="flex mt-1">
+                <input
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="+1 (555) 000-0000"
+                  className="px-4 py-2 block w-3/4 rounded-r-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
+                  onChange={(e) =>
+                    setData((old) => ({ ...old, phone: e.target.value }))
+                  }
+                />
               </div>
-            </form>
+            </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                placeholder="Leave us a message..."
+                className="px-4 py-2 mt-1 block w-full rounded-md border-1 border-gray-400 shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm"
+                onChange={(e) =>
+                  setData((old) => ({ ...old, msg: e.target.value }))
+                }
+              ></textarea>
+            </div>
+
+            <div>
+              <Link
+                type="submit"
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
+                onClick={() => {}}
+                href={`mailto:anggreanibatik@gmail.com?subject=Customer%20-%20${encodeURIComponent(
+                  data.firstName + " " + data.lastName
+                )}%20-%20${encodeURIComponent(
+                  data.phone
+                )}%20-%20${encodeURIComponent(
+                  data.email
+                )}&body=Hello!%0D%0A%0D%0AMy%20name%20is%20${encodeURIComponent(
+                  data.firstName + " " + data.lastName
+                )}%2C%20I%20want%20to%20know%20more%20about%20Anggreani%20Batik.%0D%0A${encodeURIComponent(
+                  data.msg
+                )}%0D%0A%0D%0AThank%20You%2C%0D%0A${encodeURIComponent(
+                  data.firstName + " " + data.lastName
+                )}`}
+              >
+                Send
+              </Link>
+            </div>
           </div>
         </div>
       </div>
