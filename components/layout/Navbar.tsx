@@ -93,7 +93,7 @@ const Navbar = () => {
                 </li>
                 <li className="hover:bg-gray-200 transition duration-300">
                   <Link
-                    href="/what-we-do/warehouse"
+                    href="/what-we-do/our-product"
                     className="block px-4 py-2"
                     onClick={toggleDropdown}
                   >
@@ -184,7 +184,7 @@ const Navbar = () => {
                   </li>
                   <li className="hover:bg-gray-600 transition duration-300">
                     <Link
-                      href="/what-we-do/warehouse"
+                      href="/what-we-do/our-product"
                       className="block px-4 py-2"
                       onClick={toggleDropdown}
                     >
