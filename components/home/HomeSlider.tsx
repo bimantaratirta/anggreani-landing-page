@@ -3,10 +3,10 @@ import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-import Slider1 from "@/public/image/Header Slide 1.jpg";
-import Slider2 from "@/public/image/Header Slide 2.jpg";
-import Slider3 from "@/public/image/Header Slide 3.jpg";
-import Slider4 from "@/public/image/Header Slide 4.jpg";
+import Slider1 from "../../public/image/Header Slide 1.jpg";
+import Slider2 from "../../public/image/Header Slide 2.jpg";
+import Slider3 from "../../public/image/Header Slide 3.jpg";
+import Slider4 from "../../public/image/Header Slide 4.jpg";
 
 export default function HomeSlider() {
   const slides = [

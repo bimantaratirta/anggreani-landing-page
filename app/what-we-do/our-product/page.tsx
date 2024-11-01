@@ -1,6 +1,6 @@
-import Dummy from "@/public/carousel1.jpg";
+import Dummy from "../../../public/carousel1.jpg";
 import Image from "next/image";
-import HeaderImage from "@/public/image/our-product.jpg";
+import HeaderImage from "../../../public/image/our-product.jpg";
 
 const datas = [
   {
