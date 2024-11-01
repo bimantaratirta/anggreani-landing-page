@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import Slider from "@/public/image/Header Slide 1.jpg";
+import Slider from "../../public/image/Header Slide 1.jpg";
 
 export default function HomeAdvantages() {
   return (

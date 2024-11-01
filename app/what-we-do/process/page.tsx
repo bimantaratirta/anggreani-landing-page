@@ -1,4 +1,4 @@
-import Flow from "@/public/flow.png";
+import Flow from "../../../public/flow.png";
 import Image from "next/image";
 
 export default function Process() {

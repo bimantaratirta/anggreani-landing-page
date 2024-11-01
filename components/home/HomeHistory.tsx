@@ -2,9 +2,9 @@
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
-import ProductionCapacity from "@/public/image/Production Capacity 3.jpg";
-import DesignExpertise from "@/public/image/IMG_0295.jpg";
-import TheHistory from "@/public/image/The History 1.jpg";
+import ProductionCapacity from "../../public/image/Production Capacity 3.jpg";
+import DesignExpertise from "../../public/image/IMG_0295.jpg";
+import TheHistory from "../../public/image/The History 1.jpg";
 
 const content = [
   {
