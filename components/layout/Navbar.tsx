@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
-import Logo from "../../public/logo.jpeg";
+import { FiMenu, FiX } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -24,8 +23,10 @@ const Navbar = () => {
     <nav className="bg-white px-4 py-6 w-full">
       <div className="container mx-auto flex flex-wrap justify-between items-center transition duration-300">
         <Image
-          src={Logo}
+          src={"/logo.jpeg"}
           alt={"logo"}
+          width={125}
+          height={0}
           className="w-[125px] sm:w-[200px]"
           priority
         />
