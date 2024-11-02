@@ -1,5 +1,5 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -52,7 +52,7 @@ Card.displayName = "Card";
 
 type Card = {
   title: string;
-  src: StaticImageData;
+  src: string;
 };
 
 export function FocusCards({

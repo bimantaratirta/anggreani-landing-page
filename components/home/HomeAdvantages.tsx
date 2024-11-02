@@ -1,7 +1,6 @@
 import React from "react";
 
 import Image from "next/image";
-import Slider from "../../public/image/Header Slide 1.jpg";
 
 export default function HomeAdvantages() {
   return (
@@ -16,8 +15,10 @@ export default function HomeAdvantages() {
           }`}
         >
           <Image
-            src={Slider}
+            src="/image/Header Slide 1.jpg"
             alt={"image"}
+            width={275}
+            height={0}
             className="flex-1 max-w-[300px] rounded-md"
           />
           <div

@@ -3,17 +3,12 @@ import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-import Slider1 from "../../public/image/Header Slide 1.jpg";
-import Slider2 from "../../public/image/Header Slide 2.jpg";
-import Slider3 from "../../public/image/Header Slide 3.jpg";
-import Slider4 from "../../public/image/Header Slide 4.jpg";
-
 export default function HomeSlider() {
   const slides = [
-    { url: Slider1, alt: "Batik 1" },
-    { url: Slider2, alt: "Batik 2" },
-    { url: Slider3, alt: "Batik 3" },
-    { url: Slider4, alt: "Batik 3" },
+    { url: "/image/Header Slide 1.jpg", alt: "Batik 1" },
+    { url: "/image/Header Slide 2.jpg", alt: "Batik 2" },
+    { url: "/image/Header Slide 3.jpg", alt: "Batik 3" },
+    { url: "/image/Header Slide 4.jpg", alt: "Batik 3" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,6 +44,8 @@ export default function HomeSlider() {
             key={index}
             src={slide.url}
             alt={slide.alt}
+            width={1000}
+            height={1000}
             className="w-full aspect-[20/9] object-cover flex-shrink-0"
           />
         ))}

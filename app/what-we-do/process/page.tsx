@@ -1,4 +1,3 @@
-import Flow from "../../../public/flow.png";
 import Image from "next/image";
 
 export default function Process() {
@@ -11,7 +10,13 @@ export default function Process() {
         We have a production capacity of 80,000 - 100,000 yards per month with
         the workflow as below.
       </h1>
-      <Image src={Flow} alt={"flow"} />
+      <Image
+        src="/flow.png"
+        alt={"flow"}
+        width={521}
+        height={0}
+        className="w-50"
+      />
     </div>
   );
 }

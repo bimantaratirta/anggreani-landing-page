@@ -1,6 +1,4 @@
-import Dummy from "../../../public/carousel1.jpg";
 import Image from "next/image";
-import HeaderImage from "../../../public/image/our-product.jpg";
 
 const datas = [
   {
@@ -70,8 +68,10 @@ export default function OurProduct() {
     <div className="flex flex-col w-screen">
       <div className="relative w-full aspect-[20/9]">
         <Image
-          src={HeaderImage}
+          src="/image/our-product.jpg"
           alt={""}
+          width={1000}
+          height={1000}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -119,7 +119,7 @@ export default function OurProduct() {
                   <div className="flex gap-4 flex-col md:flex-row">
                     <div className="relative w-[150px] h-[200px]">
                       <Image
-                        src={Dummy}
+                        src="/carousel1.jpg"
                         alt="sample1"
                         layout="fill"
                         objectFit="cover"
@@ -128,7 +128,7 @@ export default function OurProduct() {
                     </div>
                     <div className="relative w-[150px] h-[200px]">
                       <Image
-                        src={Dummy}
+                        src="/carousel1.jpg"
                         alt="sample1"
                         layout="fill"
                         objectFit="cover"
@@ -168,7 +168,7 @@ export default function OurProduct() {
                     <div className="flex flex-col md:flex-row gap-4">
                       <div className="relative w-[150px] h-[200px]">
                         <Image
-                          src={Dummy}
+                          src="/carousel1.jpg"
                           alt="sample1"
                           layout="fill"
                           objectFit="cover"
@@ -177,7 +177,7 @@ export default function OurProduct() {
                       </div>
                       <div className="relative w-[150px] h-[200px]">
                         <Image
-                          src={Dummy}
+                          src="/carousel1.jpg"
                           alt="sample1"
                           layout="fill"
                           objectFit="cover"

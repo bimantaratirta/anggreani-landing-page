@@ -2,9 +2,6 @@
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
-import ProductionCapacity from "../../public/image/Production Capacity 3.jpg";
-import DesignExpertise from "../../public/image/IMG_0295.jpg";
-import TheHistory from "../../public/image/The History 1.jpg";
 
 const content = [
   {
@@ -14,7 +11,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src={TheHistory}
+          src="/image/The History 1.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"
@@ -30,7 +27,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src={ProductionCapacity}
+          src="/image/Production Capacity 3.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"
@@ -46,7 +43,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src={DesignExpertise}
+          src="/image/IMG_0295.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"

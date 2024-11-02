@@ -1,31 +1,29 @@
 "use client";
 
 import React, { useState } from "react";
-import Dummy from "../../../public/carousel1.jpg";
-import Dummy2 from "../../../public/carousel1.jpg";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useAuth } from "@/context/AuthContext";
 import crypto from "crypto";
 
 const images = [
-  { id: 1, title: "Foto 1", src: Dummy },
-  { id: 2, title: "Foto 2", src: Dummy2 },
-  { id: 3, title: "Foto 3", src: Dummy },
-  { id: 4, title: "Foto 4", src: Dummy2 },
-  { id: 1, title: "Foto 1", src: Dummy },
-  { id: 2, title: "Foto 2", src: Dummy2 },
-  { id: 3, title: "Foto 3", src: Dummy },
-  { id: 4, title: "Foto 4", src: Dummy2 },
-  { id: 1, title: "Foto 1", src: Dummy },
-  { id: 2, title: "Foto 2", src: Dummy2 },
-  { id: 3, title: "Foto 3", src: Dummy },
-  { id: 4, title: "Foto 4", src: Dummy2 },
-  { id: 1, title: "Foto 1", src: Dummy },
-  { id: 2, title: "Foto 2", src: Dummy2 },
-  { id: 3, title: "Foto 3", src: Dummy },
-  { id: 4, title: "Foto 4", src: Dummy2 },
-  { id: 5, title: "Foto 5", src: Dummy },
+  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
+  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
+  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
+  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
+  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
+  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
+  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
+  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
+  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
+  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
+  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
+  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
+  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
+  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
+  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
+  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
+  { id: 5, title: "Foto 5", src: "/carousel1.jpg" },
 ];
 
 const Spray: React.FC = () => {

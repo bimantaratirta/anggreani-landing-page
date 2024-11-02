@@ -1,7 +1,6 @@
 "use client";
 
 import { FocusCards } from "@/components/ui/focus-cards";
-import Preview from "../../public/carousel1.jpg";
 import { useAuth } from "@/context/AuthContext";
 import { useState } from "react";
 import crypto from "crypto";
@@ -9,11 +8,11 @@ import crypto from "crypto";
 const cards = [
   {
     title: "Stamp",
-    src: Preview,
+    src: "/carousel1.jpg",
   },
   {
     title: "Spray",
-    src: Preview,
+    src: "/carousel1.jpg",
   },
 ];
 
