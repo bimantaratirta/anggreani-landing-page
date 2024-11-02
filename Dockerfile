@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY package.json ./
 # install dependencies
+RUN npm i sharp
 RUN npm install
 COPY . .
 
