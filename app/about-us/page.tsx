@@ -1,25 +1,25 @@
 import Image from "next/image";
+import Background from "../../public/image/IMG_0321.jpg";
 import { Timeline } from "@/components/ui/timeline";
-// import Background from "../../public/image/IMG_0321.jpg";
-// import History1 from "../../public/image/The History 1.jpg";
-// import History2 from "../../public/image/The History 2.jpg";
-// import History3 from "../../public/image/The History 3.jpg";
-// import History4 from "../../public/image/IMG_0304.jpg";
-// import Production1 from "../../public/image/Production Capacity 1.jpg";
-// import Production2 from "../../public/image/Production Capacity 2.jpg";
-// import Production3 from "../../public/image/Production Capacity 3.jpg";
-// import Production4 from "../../public/image/Production Capacity 4.jpg";
-// import Design1 from "../../public/image/IMG_0244.jpg";
-// import Design2 from "../../public/image/IMG_0295.jpg";
-// import Design3 from "../../public/image/IMG_0315.jpg";
-// import Design4 from "../../public/image/IMG_0306.jpg";
+import History1 from "@/public/image/The History 1.jpg";
+import History2 from "@/public/image/The History 2.jpg";
+import History3 from "@/public/image/The History 3.jpg";
+import History4 from "@/public/image/IMG_0304.jpg";
+import Production1 from "@/public/image/Production Capacity 1.jpg";
+import Production2 from "@/public/image/Production Capacity 2.jpg";
+import Production3 from "@/public/image/Production Capacity 3.jpg";
+import Production4 from "@/public/image/Production Capacity 4.jpg";
+import Design1 from "@/public/image/IMG_0244.jpg";
+import Design2 from "@/public/image/IMG_0295.jpg";
+import Design3 from "@/public/image/IMG_0315.jpg";
+import Design4 from "@/public/image/IMG_0306.jpg";
 
 export default function AboutUs() {
   return (
     <div className="flex flex-col">
       <div className="relative w-full aspect-[20/9]">
-        <img
-          src="/public/image/IMG_0321.jpg"
+        <Image
+          src={Background}
           alt={""}
           className="w-full h-full object-cover"
         />
