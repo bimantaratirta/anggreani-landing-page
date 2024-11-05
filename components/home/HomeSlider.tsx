@@ -7,8 +7,8 @@ export default function HomeSlider() {
   const slides = [
     { url: "/image/Header Slide 1.jpg", alt: "Batik 1" },
     { url: "/image/Header Slide 2.jpg", alt: "Batik 2" },
-    { url: "/image/Header Slide 3.jpg", alt: "Batik 3" },
-    { url: "/image/Header Slide 4.jpg", alt: "Batik 3" },
+    { url: "/image/Header slide 3.jpg", alt: "Batik 3" },
+    { url: "/image/Header slide 4.jpg", alt: "Batik 4" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
