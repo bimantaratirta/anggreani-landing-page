@@ -24,7 +24,7 @@ export async function GET(request: Request) {
     }));
 
     return NextResponse.json(images);
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Folder not found" }, { status: 404 });
   }
 }
