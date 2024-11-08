@@ -12,7 +12,7 @@ const cards = [
   },
   {
     title: "Spray",
-    src: "/carousel1.jpg",
+    src: "/spray.jpg",
   },
 ];
 

@@ -11,7 +11,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src="/image/The History 1.jpg"
+          src="/image/The History.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"
@@ -27,7 +27,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src="/image/Production Capacity 3.jpg"
+          src="/image/Production Capacity.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"
@@ -43,7 +43,7 @@ const content = [
     content: (
       <div className="h-full w-full rounded flex items-center justify-center text-black">
         <Image
-          src="/image/IMG_0295.jpg"
+          src="/image/Design Expertise1.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover rounded"
