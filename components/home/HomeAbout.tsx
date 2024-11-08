@@ -40,7 +40,7 @@ export default function HomeAbout() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="https://wa.me/+62123456789"
+                    href="https://wa.me/+6282135929471"
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >
@@ -50,7 +50,7 @@ export default function HomeAbout() {
                 </li>
                 <li>
                   <Link
-                    href="https://instagram.com"
+                    href="https://instagram.com/anggreanibatik"
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >
@@ -70,7 +70,7 @@ export default function HomeAbout() {
                 </li>
                 <li>
                   <Link
-                    href="https://instagram.com"
+                    href="mailto:doc1.anggreanibatik@gmail.com"
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >
@@ -80,7 +80,7 @@ export default function HomeAbout() {
                 </li>
                 <li>
                   <Link
-                    href="https://instagram.com"
+                    href="mailto:marketing1.anggreanibatik@gmail.com"
                     target="_blank"
                     className="flex items-center space-x-2 hover:text-blue-800"
                   >

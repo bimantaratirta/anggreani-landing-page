@@ -28,7 +28,7 @@ const datas = [
     ],
   },
   {
-    images: ["/product/Our Product.jpg", "/product/Our Product.jpg"],
+    images: ["/product/Layer Cake.jpg", "/product/Layer Cake.jpg"],
     title: "Layer Cake Pack Bundle",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -73,7 +73,7 @@ export default function OurProduct() {
     <div className="flex flex-col w-screen">
       <div className="relative w-full aspect-[20/9]">
         <Image
-          src="/image/our-product.jpg"
+          src="/image/our-product-bg.jpg"
           alt={""}
           width={1000}
           height={1000}
@@ -133,7 +133,7 @@ export default function OurProduct() {
                     </div>
                     <div className="relative w-[250px] h-[250px]">
                       <Image
-                        src="/product/Material 2.jpg"
+                        src="/product/Material 3.jpg"
                         alt="sample1"
                         layout="fill"
                         objectFit="contain"
