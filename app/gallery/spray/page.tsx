@@ -1,37 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useAuth } from "@/context/AuthContext";
 import crypto from "crypto";
 
-const images = [
-  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
-  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
-  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
-  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
-  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
-  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
-  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
-  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
-  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
-  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
-  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
-  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
-  { id: 1, title: "Foto 1", src: "/carousel1.jpg" },
-  { id: 2, title: "Foto 2", src: "/carousel1.jpg" },
-  { id: 3, title: "Foto 3", src: "/carousel1.jpg" },
-  { id: 4, title: "Foto 4", src: "/carousel1.jpg" },
-  { id: 5, title: "Foto 5", src: "/carousel1.jpg" },
-];
+interface Image {
+  id: number;
+  title: string;
+  src: string;
+}
 
 const Spray: React.FC = () => {
+  const [images, setImages] = useState<Image[]>([]);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const auth = useAuth();
   const [form, setForm] = useState<{ pw: string; error?: string }>({ pw: "" });
   const access =
     "615a76a1c81adc95c890a5b70f548a0a5a39be11c82641270c5c529b9f076521";
+
+  useEffect(() => {
+    async function fetchImages() {
+      const res = await fetch("/api/images?folder=spray");
+      const data: Image[] = await res.json();
+      setImages(data);
+    }
+    fetchImages();
+  }, []);
 
   function handleSubmit() {
     if (form.pw === access) {
@@ -103,13 +99,16 @@ const Spray: React.FC = () => {
 
   return (
     <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {images.map((item, index) => (
-          <div key={index} className="relative overflow-hidden group">
+          <div
+            key={index}
+            className="relative overflow-hidden grou flex flex-col items-center"
+          >
             <Image
               src={item.src}
               alt={item.title}
-              className="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-105 cursor-pointer"
+              className="object-cover w-auto h-80 transition-transform duration-300 group-hover:scale-105 cursor-pointer"
               width={400}
               height={400}
               onClick={() => handleImageClick(index)}
@@ -136,12 +135,17 @@ const Spray: React.FC = () => {
               >
                 <IoIosArrowBack className="text-[16px] md:text-[32px]" />
               </button>
-              <div className="w-100 h-100">
+              <div className="relative overflow-hidden grou flex flex-col items-center">
                 <Image
                   src={images[selectedImage].src}
                   alt={images[selectedImage].title}
-                  className="h-[100%] object-cover"
+                  className="object-cover w-auto h-80 md:h-[500px]"
+                  width={400}
+                  height={400}
                 />
+                <p className="text-center text-sm mt-2 text-white">
+                  {images[selectedImage].title}
+                </p>
               </div>
               <button
                 onClick={handleNext}
@@ -152,15 +156,21 @@ const Spray: React.FC = () => {
             </div>
             <div className="absolute mt-4 flex flex-wrap justify-center space-x-2 space-y-2">
               {images.map((image, index) => (
-                <Image
-                  key={image.id}
-                  src={image.src}
-                  alt={image.title}
-                  className={`w-12 h-12 object-cover rounded-lg cursor-pointer ${
-                    index === selectedImage ? "border-2 border-white" : ""
-                  }`}
-                  onClick={() => setSelectedImage(index)}
-                />
+                <div
+                  key={index}
+                  className="relative overflow-hidden grou flex flex-col items-center"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.title}
+                    className={`w-12 h-12 object-cover rounded-lg cursor-pointer ${
+                      index === selectedImage ? "border-2 border-white" : ""
+                    }`}
+                    width={400}
+                    height={400}
+                    onClick={() => setSelectedImage(index)}
+                  />
+                </div>
               ))}
             </div>
           </div>

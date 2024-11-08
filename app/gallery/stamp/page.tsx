@@ -22,7 +22,7 @@ const Stamp: React.FC = () => {
 
   useEffect(() => {
     async function fetchImages() {
-      const res = await fetch("/api/images");
+      const res = await fetch("/api/images?folder=sample");
       const data: Image[] = await res.json();
       setImages(data);
     }
