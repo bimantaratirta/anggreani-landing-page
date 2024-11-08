@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const datas = [
   {
+    images: ["/product/Fat quarter1.jpg", "/product/Fat quarter2.jpg"],
     title: "Fat Quarter Pack Bundle",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -14,6 +15,7 @@ const datas = [
     ],
   },
   {
+    images: ["/product/Jelly Roll 1.jpg", "/product/Jelly Roll 2.jpg"],
     title: "Jelly Roll Pack Bundle",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -26,6 +28,7 @@ const datas = [
     ],
   },
   {
+    images: ["/product/Our Product.jpg", "/product/Our Product.jpg"],
     title: "Layer Cake Pack Bundle",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -38,6 +41,7 @@ const datas = [
     ],
   },
   {
+    images: ["/product/Charm Pack 1.jpg", "/product/Charm Pack 2.jpg"],
     title: "Charm Pack Bundle",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -50,6 +54,7 @@ const datas = [
     ],
   },
   {
+    images: ["/product/Our Product.jpg", "/product/Our Product.jpg"],
     title: "Fat Eight Bundle (F8)",
     details: [
       "Use 100% cotton in construction 40's or 50's",
@@ -117,22 +122,22 @@ export default function OurProduct() {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="flex flex-col items-center flex-1">
                   <div className="flex gap-4 flex-col md:flex-row">
-                    <div className="relative w-[150px] h-[200px]">
+                    <div className="relative w-[250px] h-[250px]">
                       <Image
-                        src="/carousel1.jpg"
+                        src="/product/Material 1.jpg"
                         alt="sample1"
                         layout="fill"
-                        objectFit="cover"
-                        style={{ objectFit: "cover" }}
+                        objectFit="contain"
+                        style={{ objectFit: "contain" }}
                       />
                     </div>
-                    <div className="relative w-[150px] h-[200px]">
+                    <div className="relative w-[250px] h-[250px]">
                       <Image
-                        src="/carousel1.jpg"
+                        src="/product/Material 2.jpg"
                         alt="sample1"
                         layout="fill"
-                        objectFit="cover"
-                        style={{ objectFit: "cover" }}
+                        objectFit="contain"
+                        style={{ objectFit: "contain" }}
                       />
                     </div>
                   </div>
@@ -166,22 +171,22 @@ export default function OurProduct() {
                 <div className="flex flex-col md:flex-row gap-8">
                   <div className="flex flex-col items-center flex-1">
                     <div className="flex flex-col md:flex-row gap-4">
-                      <div className="relative w-[150px] h-[200px]">
+                      <div className="relative w-[250px] h-[250px]">
                         <Image
-                          src="/carousel1.jpg"
+                          src={product.images[0]}
                           alt="sample1"
                           layout="fill"
-                          objectFit="cover"
-                          style={{ objectFit: "cover" }}
+                          objectFit="contain"
+                          style={{ objectFit: "contain" }}
                         />
                       </div>
-                      <div className="relative w-[150px] h-[200px]">
+                      <div className="relative w-[250px] h-[250px]">
                         <Image
-                          src="/carousel1.jpg"
+                          src={product.images[1]}
                           alt="sample1"
                           layout="fill"
-                          objectFit="cover"
-                          style={{ objectFit: "cover" }}
+                          objectFit="contain"
+                          style={{ objectFit: "contain" }}
                         />
                       </div>
                     </div>

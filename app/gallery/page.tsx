@@ -8,7 +8,7 @@ import crypto from "crypto";
 const cards = [
   {
     title: "Stamp",
-    src: "/carousel1.jpg",
+    src: "/stamp.jpg",
   },
   {
     title: "Spray",
