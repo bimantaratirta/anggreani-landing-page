@@ -58,11 +58,11 @@ type Card = {
 export function FocusCards({
   cards,
   className,
-  isLogin,
-}: {
+}: // isLogin,
+{
   cards: Card[];
   className: string;
-  isLogin?: boolean;
+  // isLogin?: boolean;
 }) {
   const [hovered, setHovered] = useState<number | null>(null);
   return (
@@ -79,7 +79,8 @@ export function FocusCards({
           index={index}
           hovered={hovered}
           setHovered={setHovered}
-          isLogin={isLogin ?? false}
+          isLogin={true}
+          // isLogin={isLogin ?? false}
         />
       ))}
     </div>
